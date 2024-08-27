@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Estilo do corpo */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,7 +12,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Cabeçalho */
+
 header {
     background: #333;
     color: #fff;
@@ -50,7 +50,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Seções */
+
 section {
     padding: 20px 0;
 }
@@ -75,7 +75,6 @@ section {
     margin: 0 auto;
 }
 
-/* Estilo do menu */
 .menu-item {
     background: #fff;
     border: 1px solid #ddd;
@@ -101,7 +100,7 @@ section {
     height: auto; /* altura ajustável para manter a proporção */
     max-width: 400px;
 }
-/* Formulário de contato */
+
 form {
     display: flex;
     flex-direction: column;
@@ -132,7 +131,7 @@ form button:hover {
     background-color: #555;
 }
 
-/* Rodapé */
+
 footer {
     background: #333;
     color: #fff;
@@ -153,7 +152,7 @@ footer {
     transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
 }
 
-/* Estilo do botão ao passar o mouse */
+
 .botao:hover {
     background-color: #333; /* Cor de fundo ao passar o mouse */
     transform: scale(1.1); /* Aumenta o botão em 10% */
