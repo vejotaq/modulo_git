@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário</title>
+    <script>
+        function validarFormulario(event) {
+          
+            event.preventDefault();
+
+         
+            let campoA = document.getElementById("campoA").value;
+            let campoB = document.getElementById("campoB").value;
+
+     
+            campoA = parseFloat(campoA);
+            campoB = parseFloat(campoB);
+
+           
+            if (campoB > campoA) {
+                document.getElementById("mensagem").innerText = "O formulário foi enviado com sucesso! Número B é maior que o número A.";
+                document.getElementById("mensagem").style.color = "green";
+            } else {
+               
+                document.getElementById("mensagem").innerText = "Erro! O número B deve ser maior que o número A.";
+                document.getElementById("mensagem").style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Formulário de Validação</h2>
+
+    <form id="meuFormulario" onsubmit="validarFormulario(event)">
+        <label for="campoA">Campo A (Número):</label>
+        <input type="number" id="campoA" required><br><br>
+
+        <label for="campoB">Campo B (Número):</label>
+        <input type="number" id="campoB" required><br><br>
+
+        <button type="submit">Submeter</button>
+    </form>
+
+    <p id="mensagem"></p>
+</body>
+</html>
