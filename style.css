@@ -1,159 +1,95 @@
-* {
-    margin: 0;
+ * {
+    margin:  0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header .container {
-    width: 80%;
-    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+ }
+ body {
+    background-color: #E7E7E7;
+    padding-top: 100px;
+ }
+ header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
+    margin-bottom: 40px;
+ }
 
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+ header img {
+    height: 36px;
+    margin-left: 16px;
+ }
+ header h1 {
+    font-size: 40px;
     font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-
-section {
-    padding: 20px 0;
-}
-
-.hero {
-    background: url('https://perfectdailygrind.com/pt/wp-content/uploads/sites/5/2021/07/Unsplash-1-2.jpeg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 60px 0;
-}
-
-.hero h2 {
-    font-size: 2.5em;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-.container {
-    width: 80%;
+ }
+ .container {
+    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
-}
+ }
 
-.menu-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
+ form {
+display: flex;
+max-width: 640px;
+width: 100%;
+justify-content: space-between;
+margin-bottom: 56px;
 
-.menu-item h3 {
-    margin-top: 0;
-}
+ }
+ 
+ form input {
+font-size: 24px;
+background-color: #fff;
+border: none;
+border-bottom: 2px solid #000;
+padding: 8px;
+margin-left: 16px;
+ }
 
-.menu-item span {
-    display: block;
-    margin-top: 10px;
+ form button {
+    background-color:  #009432;
+    color: #fff;
+    font-size: 24px;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   padding: 8px;
+   margin-left: 16px;
+ }
+table {
+    width: 100%;
+}
+ table th {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold ;
+ }
+
+ table td {
+text-align: center;
+font-size: 16px;
+padding: 8px 0;
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+ }
+
+ table td img {
+    height: 30px;
+ }
+
+ .resultado {
+    padding: 8px;
     font-weight: bold;
-}
-.cafe {
-    width: 200px; /* largura fixa */
-    height: 150px; /* altura fixa */
-    object-fit: cover;
-    width: 100%; /* largura ajustável conforme o contêiner */
-    height: auto; /* altura ajustável para manter a proporção */
-    max-width: 400px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
     color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-}
+    background-color: #000;
+    border-radius: 3px;
+ }
 
-form button:hover {
-    background-color: #555;
-}
+ .aprovado{
+    background-color: #009432;
+ }
 
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-.botao {
-    background-color: #555; /* Cor de fundo inicial */
-    color: white; /* Cor do texto */
-    border: none; /* Remover borda padrão */
-    padding: 15px 30px; /* Espaçamento interno */
-    text-align: center; /* Alinhamento do texto */
-    text-decoration: none; /* Remover sublinhado */
-    display: inline-block; /* Ajustar tamanho ao conteúdo */
-    font-size: 16px; /* Tamanho da fonte */
-    margin: 10px 2px; /* Margem ao redor do botão */
-    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
-}
-
-
-.botao:hover {
-    background-color: #333; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.1); /* Aumenta o botão em 10% */
-}
+ 
+ .reprovado{
+    background-color: red;
+ }
