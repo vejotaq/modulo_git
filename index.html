@@ -3,85 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria Delícia</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Calculadora de medias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+
 </head>
 <body>
+   <div class="container">
     <header>
-        <div class="container">
-            <h1>Cafeteria Delícia</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img src="./imagens/logo.png" alt="capelo e diploma">
+        <h1>Calculadora de médias</h1>
+
     </header>
-
-    <section id="home">
-        <div class="hero">
-            <h2>Bem-vindo à Cafeteria Delícia</h2>
-            <p>O melhor café da cidade, preparado com amor e paixão.</p>
-        </div>
-    </section>
-
-    <section id="menu">
-        <div class="container">
-            <h2>Nosso Menu</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <h3>Café Espresso</h3>
-                    <p>Um espresso intenso e rico em sabor.</p>
-                    <img src="https://st.depositphotos.com/1491329/2998/i/450/depositphotos_29984965-stock-photo-coffee-espresso-cup-of-coffee.jpg">
-                    <span>R$ 8,00</span>
-                </div>
-                <div class="menu-item">
-                    <h3>Cappuccino</h3>
-                    <p>Café cremoso com espuma de leite e cacau.</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLlKWsTfoTG1URS37sytGKhyH9JH6Itqvhg&s">
-                    <span>R$ 12,00</span>
-                </div>
-                <div class="menu-item">
-                    <h3>Latte</h3>
-                    <p>Café com uma generosa quantidade de leite vaporizado.</p>
-                    <img src="https://media.istockphoto.com/id/505168330/pt/foto/copo-de-caf%C3%A9-latte-cafecom-gr%C3%A3os-de-caf%C3%A9-e-paus-de-canela.jpg?s=612x612&w=0&k=20&c=SO8LoLtoftBKPG9ruXpmtJAw0ZCINWvaLIn83TRmy88=">
-                    <span>R$ 11,00</span>
-                </div>
-                <div class="menu-item">
-                    <h3>Brownie</h3>
-                    <p>Delicioso brownie com pedaços de chocolate.</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDS87PZKyciL0iLpXUS_4TIKMEOBpQpHZg-g&s">
-                    <span>R$ 7,00</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-
-            <h2>Entre em Contato</h2>
-            <form>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button class="botao" type="submit">Enviar</button>
-            </form>
+    <form id="form-atividade">
+        <input type="text" id="nome-atividade" required placeholder="Nome da atividade"> 
+        <input type=" number" id="nota-atividade" required placeholder="Nota da atividade" min="0" max="10">
+        <button type="submit">Adicionar +</button>
+    </form>
+    <table cellspacing = "0">
+        <thead>
+    <tr>
+        <th>
+            Nome da atividade
+        </th>
+        <th>
+            Nota da atividade
+        </th>
+        <th>
+            Aprovado?
+        </th>
+    </tr>
+</thead>
+        <tbody>
         
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Cafeteria Delícia. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Media final</td>
+            <td id="media-final-valor">---</td>
+            <td id="media-final-resultado">---</td>
+          </tr>
+        </tfoot>
+    </table>
+   </div>
+   <script src="./main.js"></script>
 </body>
-</html>
+</html>\
